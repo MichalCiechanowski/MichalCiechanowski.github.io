@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Itim-Regular;
+  src: url('Itim-Regular.ttf') format("opentype");
+}
+
+html {
+  font-family: Itim-Regular;
+  background-image: url('5-dots.png');
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+/*# sourceMappingURL=styles.css.map*/
