@@ -1,1 +1,1 @@
-[GitHub Pages](MichalCiechanowski.github.io)
+[MichalCiechanowski.github.io](MichalCiechanowski.github.io)
