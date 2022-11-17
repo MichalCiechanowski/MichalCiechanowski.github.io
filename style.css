@@ -1,0 +1,111 @@
+:root {
+    --Background: #282a36;
+    --Current-Line: #44475a;
+    --Foreground: #f8f8f2;
+    --Comment: #6272a4;
+    --Cyan: #8be9fd;
+    --Green: #50fa7b;
+    --Orange: #ffb86c;
+    --Pink: #ff79c6;
+    --Purple: #bd93f9;
+    --Red: #ff5555;
+    --Yellow: #f1fa8c;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+html,
+body {
+    background: var(--Background);
+    color: var(--Foreground);
+    user-select: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header {
+    max-width: 1000px;
+    font-size: 24px;
+    margin: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.git-hub {
+    float: right;
+}
+
+.git-hub-div {
+    color: var(--Background);
+    background: var(--Orange);
+    border: solid 1px var(--Orange);
+    border-radius: 5px;
+    margin-left: 2px;
+    float: right;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.grid {
+    max-width: 1000px;
+    margin: 50px auto 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-element,
+.load_more {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: var(--Comment);
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.grid-element {
+    aspect-ratio: 1;
+}
+
+.load_more {
+    margin: auto;
+    width: 190px;
+    aspect-ratio: 2/.6;
+}
+
+.grid-element:hover,
+.load_more:hover {
+    background: var(--Cyan);
+    scale: 105%;
+    color: var(--Background);
+}
+
+.gird-element-animation-out {
+    animation-name: fading;
+    animation-duration: .75s;
+    animation-fill-mode: forwards;
+}
+
+.gird-element-animation-in {
+    animation-name: fading;
+    animation-duration: .75s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
